@@ -85,6 +85,6 @@ with open(sys.argv[1],"r") as mainfile:
         else:
             print 'failed or end'
 
-with open("output.csv", "wb") as g:
+with open(sys.argv[2], "wb") as g:
     writer = csv.writer(g)
     writer.writerows(bigdic)
